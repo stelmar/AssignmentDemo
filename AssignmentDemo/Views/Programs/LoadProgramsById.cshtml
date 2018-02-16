@@ -1,0 +1,74 @@
+﻿@model AssignmentDemo.DAL.Program
+
+@{
+    ViewBag.Title = "LoadProgramsById";
+}
+
+<h2>LoadProgramsById</h2>
+
+<div>
+    <h4>Program</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsOnAirNow)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsOnAirNow)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProgramImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProgramImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsPaidProgram)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsPaidProgram)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @*@Html.ActionLink("Edit", "EditProgram", new { id = Model.ProgramId }) |*@
+    @Html.ActionLink("Back to List", "Index")
+</p>
